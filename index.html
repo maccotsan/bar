@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bar Menu</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Georgia', serif;
+      background: #1a1a2e;
+      color: #e0d6c8;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .menu {
+      max-width: 600px;
+      width: 100%;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      letter-spacing: 0.3em;
+      border-bottom: 1px solid #c9a96e;
+      padding-bottom: 16px;
+      margin-bottom: 32px;
+      color: #c9a96e;
+    }
+    h2 {
+      font-size: 1.2rem;
+      letter-spacing: 0.2em;
+      color: #c9a96e;
+      margin: 24px 0 12px;
+    }
+    ul {
+      list-style: none;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px dotted #333;
+    }
+    .price {
+      white-space: nowrap;
+      margin-left: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <h1>MENU</h1>
+
+    <h2>WHISKY</h2>
+    <ul>
+      <li><span>Maker's Mark</span><span class="price">¥800</span></li>
+      <li><span>Jameson</span><span class="price">¥800</span></li>
+      <li><span>Yamazaki 12</span><span class="price">¥1,500</span></li>
+    </ul>
+
+    <h2>COCKTAIL</h2>
+    <ul>
+      <li><span>Gin &amp; Tonic</span><span class="price">¥900</span></li>
+      <li><span>Moscow Mule</span><span class="price">¥900</span></li>
+      <li><span>Old Fashioned</span><span class="price">¥1,000</span></li>
+    </ul>
+
+    <h2>BEER</h2>
+    <ul>
+      <li><span>Draft Beer</span><span class="price">¥700</span></li>
+      <li><span>IPA</span><span class="price">¥900</span></li>
+    </ul>
+
+    <h2>NON-ALCOHOL</h2>
+    <ul>
+      <li><span>Ginger Ale</span><span class="price">¥500</span></li>
+      <li><span>Orange Juice</span><span class="price">¥500</span></li>
+    </ul>
+  </div>
+</body>
+</html>
