@@ -64,25 +64,21 @@ function getStyleInfo(style) {
   return STYLE_MAP[style] || { label: style, icon: '🍹' };
 }
 
-// Language toggle
+const LANG_FLAGS = { ja: '🇯🇵', en: '🇺🇸' };
+
+// Language switch
 function initLangToggle() {
-  const container = document.getElementById('lang-toggle');
-  if (!container) return;
+  const btn = document.getElementById('lang-switch');
+  if (!btn) return;
 
   // Set initial state
-  container.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === currentLang);
-  });
+  btn.textContent = LANG_FLAGS[currentLang];
   document.documentElement.lang = currentLang;
 
-  container.addEventListener('click', (e) => {
-    const btn = e.target.closest('.lang-btn');
-    if (!btn || btn.dataset.lang === currentLang) return;
-
-    setLang(btn.dataset.lang);
-    container.querySelectorAll('.lang-btn').forEach(b => {
-      b.classList.toggle('active', b.dataset.lang === currentLang);
-    });
+  btn.addEventListener('click', () => {
+    const newLang = currentLang === 'ja' ? 'en' : 'ja';
+    setLang(newLang);
+    btn.textContent = LANG_FLAGS[currentLang];
 
     // Re-render current page
     renderList();
