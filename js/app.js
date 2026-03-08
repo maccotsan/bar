@@ -44,7 +44,7 @@ function getName(c) {
 }
 
 function getSubName(c) {
-  return getLang() === 'en' ? c.name : c.nameEn;
+  return getLang() === 'en' ? '' : c.nameEn;
 }
 
 function getIngredients(c) {
