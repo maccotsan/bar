@@ -8,7 +8,7 @@ let allCocktails = [];
 let currentFilter = 'all';
 
 async function loadCocktails() {
-  const res = await fetch('data/cocktails.json?v=5');
+  const res = await fetch('data/cocktails.json?t=' + Date.now());
   return res.json();
 }
 
