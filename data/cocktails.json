@@ -1,0 +1,56 @@
+[
+  {
+    "id": "gin-and-tonic",
+    "name": "ジントニック",
+    "nameEn": "Gin & Tonic",
+    "style": "long",
+    "ingredients": ["ジン", "トニックウォーター", "ライム"],
+    "image": "images/cocktails/gin-and-tonic.jpg",
+    "description": "ジンの爽やかな香りとトニックウォーターのほろ苦さが調和した定番カクテル。"
+  },
+  {
+    "id": "martini",
+    "name": "マティーニ",
+    "nameEn": "Martini",
+    "style": "short",
+    "ingredients": ["ジン", "ドライベルモット", "オリーブ"],
+    "image": "images/cocktails/martini.jpg",
+    "description": "カクテルの王様と呼ばれる、シンプルかつ奥深い一杯。"
+  },
+  {
+    "id": "old-fashioned",
+    "name": "オールドファッションド",
+    "nameEn": "Old Fashioned",
+    "style": "rock",
+    "ingredients": ["バーボン", "アンゴスチュラビターズ", "砂糖", "オレンジピール"],
+    "image": "images/cocktails/old-fashioned.jpg",
+    "description": "ウイスキーの芳醇な味わいをビターズと砂糖が引き立てるクラシックカクテル。"
+  },
+  {
+    "id": "moscow-mule",
+    "name": "モスコミュール",
+    "nameEn": "Moscow Mule",
+    "style": "long",
+    "ingredients": ["ウォッカ", "ジンジャービア", "ライムジュース"],
+    "image": "images/cocktails/moscow-mule.jpg",
+    "description": "ジンジャーの刺激とライムの酸味が爽快なカクテル。"
+  },
+  {
+    "id": "negroni",
+    "name": "ネグローニ",
+    "nameEn": "Negroni",
+    "style": "rock",
+    "ingredients": ["ジン", "カンパリ", "スイートベルモット"],
+    "image": "images/cocktails/negroni.jpg",
+    "description": "ほろ苦さと甘みが絶妙にマッチした、イタリア生まれの名作。"
+  },
+  {
+    "id": "daiquiri",
+    "name": "ダイキリ",
+    "nameEn": "Daiquiri",
+    "style": "short",
+    "ingredients": ["ホワイトラム", "ライムジュース", "砂糖"],
+    "image": "images/cocktails/daiquiri.jpg",
+    "description": "ラムの甘みとライムの酸味が織りなすキューバ生まれのショートカクテル。"
+  }
+]
