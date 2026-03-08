@@ -5,8 +5,10 @@
     "nameEn": "Gin & Tonic",
     "style": "long",
     "ingredients": ["ジン", "トニックウォーター", "ライム"],
+    "ingredientsEn": ["Gin", "Tonic Water", "Lime"],
     "image": "images/cocktails/gin-and-tonic.jpg",
-    "description": "ジンの爽やかな香りとトニックウォーターのほろ苦さが調和した定番カクテル。"
+    "description": "ジンの爽やかな香りとトニックウォーターのほろ苦さが調和した定番カクテル。",
+    "descriptionEn": "A classic cocktail where the refreshing aroma of gin harmonizes with the subtle bitterness of tonic water."
   },
   {
     "id": "martini",
@@ -14,8 +16,10 @@
     "nameEn": "Martini",
     "style": "short",
     "ingredients": ["ジン", "ドライベルモット", "オリーブ"],
+    "ingredientsEn": ["Gin", "Dry Vermouth", "Olive"],
     "image": "images/cocktails/martini.jpg",
-    "description": "カクテルの王様と呼ばれる、シンプルかつ奥深い一杯。"
+    "description": "カクテルの王様と呼ばれる、シンプルかつ奥深い一杯。",
+    "descriptionEn": "Known as the king of cocktails — a simple yet profoundly elegant drink."
   },
   {
     "id": "old-fashioned",
@@ -23,8 +27,10 @@
     "nameEn": "Old Fashioned",
     "style": "rock",
     "ingredients": ["バーボン", "アンゴスチュラビターズ", "砂糖", "オレンジピール"],
+    "ingredientsEn": ["Bourbon", "Angostura Bitters", "Sugar", "Orange Peel"],
     "image": "images/cocktails/old-fashioned.jpg",
-    "description": "ウイスキーの芳醇な味わいをビターズと砂糖が引き立てるクラシックカクテル。"
+    "description": "ウイスキーの芳醇な味わいをビターズと砂糖が引き立てるクラシックカクテル。",
+    "descriptionEn": "A classic cocktail where bitters and sugar enhance the rich flavor of whiskey."
   },
   {
     "id": "moscow-mule",
@@ -32,8 +38,10 @@
     "nameEn": "Moscow Mule",
     "style": "long",
     "ingredients": ["ウォッカ", "ジンジャービア", "ライムジュース"],
+    "ingredientsEn": ["Vodka", "Ginger Beer", "Lime Juice"],
     "image": "images/cocktails/moscow-mule.jpg",
-    "description": "ジンジャーの刺激とライムの酸味が爽快なカクテル。"
+    "description": "ジンジャーの刺激とライムの酸味が爽快なカクテル。",
+    "descriptionEn": "A refreshing cocktail with the kick of ginger and the tartness of lime."
   },
   {
     "id": "negroni",
@@ -41,8 +49,10 @@
     "nameEn": "Negroni",
     "style": "rock",
     "ingredients": ["ジン", "カンパリ", "スイートベルモット"],
+    "ingredientsEn": ["Gin", "Campari", "Sweet Vermouth"],
     "image": "images/cocktails/negroni.jpg",
-    "description": "ほろ苦さと甘みが絶妙にマッチした、イタリア生まれの名作。"
+    "description": "ほろ苦さと甘みが絶妙にマッチした、イタリア生まれの名作。",
+    "descriptionEn": "An Italian masterpiece with a perfect balance of bitterness and sweetness."
   },
   {
     "id": "daiquiri",
@@ -50,7 +60,9 @@
     "nameEn": "Daiquiri",
     "style": "short",
     "ingredients": ["ホワイトラム", "ライムジュース", "砂糖"],
+    "ingredientsEn": ["White Rum", "Lime Juice", "Sugar"],
     "image": "images/cocktails/daiquiri.jpg",
-    "description": "ラムの甘みとライムの酸味が織りなすキューバ生まれのショートカクテル。"
+    "description": "ラムの甘みとライムの酸味が織りなすキューバ生まれのショートカクテル。",
+    "descriptionEn": "A Cuban-born short cocktail weaving together the sweetness of rum and the tartness of lime."
   }
 ]
