@@ -56,7 +56,7 @@ function getDescription(c) {
 }
 
 async function loadCocktails() {
-  const res = await fetch('data/cocktails.json');
+  const res = await fetch('data/cocktails.json?v=3');
   return res.json();
 }
 
@@ -64,21 +64,17 @@ function getStyleInfo(style) {
   return STYLE_MAP[style] || { label: style, icon: '🍹' };
 }
 
-const LANG_FLAGS = { ja: '🇯🇵', en: '🇺🇸' };
-
-// Language switch
+// Language select
 function initLangToggle() {
-  const btn = document.getElementById('lang-switch');
-  if (!btn) return;
+  const select = document.getElementById('lang-select');
+  if (!select) return;
 
   // Set initial state
-  btn.textContent = LANG_FLAGS[currentLang];
+  select.value = currentLang;
   document.documentElement.lang = currentLang;
 
-  btn.addEventListener('click', () => {
-    const newLang = currentLang === 'ja' ? 'en' : 'ja';
-    setLang(newLang);
-    btn.textContent = LANG_FLAGS[currentLang];
+  select.addEventListener('change', () => {
+    setLang(select.value);
 
     // Re-render current page
     renderList();
