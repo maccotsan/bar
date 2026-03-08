@@ -121,6 +121,7 @@ async function renderDetail() {
     <div class="detail-section">
       <h3 class="detail-section-title">Note</h3>
       <p class="detail-description">${c.description}</p>
+      ${c.descriptionEn ? `<p class="detail-description-en">${c.descriptionEn}</p>` : ''}
     </div>
   `;
 
