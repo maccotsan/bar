@@ -7,6 +7,9 @@ const STYLE_MAP = {
 let allCocktails = [];
 let currentFilter = 'all';
 
+const params = new URLSearchParams(window.location.search);
+const isBartender = params.get('bartender') === '1';
+
 async function loadCocktails() {
   const res = await fetch('data/cocktails.json?t=' + Date.now());
   return res.json();
@@ -14,6 +17,10 @@ async function loadCocktails() {
 
 function getStyleInfo(style) {
   return STYLE_MAP[style] || { label: style, icon: '🍹' };
+}
+
+function bartenderQuery() {
+  return isBartender ? '&bartender=1' : '';
 }
 
 // Filter bar
@@ -55,7 +62,7 @@ function renderCocktailItems() {
     const ingredientsJa = c.ingredients.join(' / ');
     const ingredientsEn = c.ingredientsEn ? c.ingredientsEn.join(' / ') : '';
     return `
-      <a href="detail.html?id=${c.id}" class="cocktail-item">
+      <a href="detail.html?id=${c.id}${bartenderQuery()}" class="cocktail-item">
         <span class="style-icon">${style.icon}</span>
         <div class="info">
           <div class="name">${c.name}</div>
@@ -84,7 +91,6 @@ async function renderDetail() {
   const container = document.getElementById('cocktail-detail');
   if (!container) return;
 
-  const params = new URLSearchParams(window.location.search);
   const id = params.get('id');
   if (!id) {
     container.innerHTML = '<p>カクテルが見つかりません。</p>';
@@ -100,9 +106,28 @@ async function renderDetail() {
 
   const style = getStyleInfo(c.style);
   const backIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>';
+  const backHref = isBartender ? 'index.html?bartender=1' : 'index.html';
+
+  // Ingredients section
+  const ingredientsList = c.ingredients.map((ing, i) => {
+    const en = c.ingredientsEn ? c.ingredientsEn[i] : '';
+    const amount = (isBartender && c.amounts) ? c.amounts[i] : '';
+    return `<li>
+      <span class="ingredient-ja">${ing}${amount ? `<span class="ingredient-amount">${amount}</span>` : ''}</span>
+      ${en ? `<span class="ingredient-en">${en}</span>` : ''}
+    </li>`;
+  }).join('');
+
+  // Bartender note section
+  const bartenderNoteSection = (isBartender && c.bartenderNote) ? `
+    <div class="detail-section">
+      <h3 class="detail-section-title">Bartender Note</h3>
+      <p class="detail-description bartender-note">${c.bartenderNote}</p>
+    </div>
+  ` : '';
 
   container.innerHTML = `
-    <a href="index.html" class="back-link">${backIcon} Back to menu</a>
+    <a href="${backHref}" class="back-link">${backIcon} Back to menu</a>
     <div class="detail-hero">${style.icon}</div>
     <div class="detail-meta">
       <h2 class="detail-name">${c.name}</h2>
@@ -112,10 +137,7 @@ async function renderDetail() {
     <div class="detail-section">
       <h3 class="detail-section-title">Ingredients</h3>
       <ul class="detail-ingredients">
-        ${c.ingredients.map((ing, i) => {
-          const en = c.ingredientsEn ? c.ingredientsEn[i] : '';
-          return `<li><span class="ingredient-ja">${ing}</span>${en ? `<span class="ingredient-en">${en}</span>` : ''}</li>`;
-        }).join('')}
+        ${ingredientsList}
       </ul>
     </div>
     <div class="detail-section">
@@ -123,6 +145,7 @@ async function renderDetail() {
       <p class="detail-description">${c.description}</p>
       ${c.descriptionEn ? `<p class="detail-description-en">${c.descriptionEn}</p>` : ''}
     </div>
+    ${bartenderNoteSection}
   `;
 
   container.classList.add('fade-in');

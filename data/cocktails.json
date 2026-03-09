@@ -6,9 +6,11 @@
     "style": "long",
     "ingredients": ["ジン", "トニックウォーター", "ライム"],
     "ingredientsEn": ["Gin", "Tonic Water", "Lime"],
+    "amounts": ["45ml", "適量", "1/6個"],
     "image": "images/cocktails/gin-and-tonic.jpg",
     "description": "ジンの爽やかな香りとトニックウォーターのほろ苦さが調和した定番カクテル。",
-    "descriptionEn": "A classic cocktail where the refreshing aroma of gin harmonizes with the subtle bitterness of tonic water."
+    "descriptionEn": "A classic cocktail where the refreshing aroma of gin harmonizes with the subtle bitterness of tonic water.",
+    "bartenderNote": "グラスに氷をたっぷり入れ、ジンを注いでからトニックウォーターを静かに加える。炭酸が抜けないよう軽く1回だけステアする。ライムは軽く搾ってからグラスに落とす。"
   },
   {
     "id": "martini",
@@ -17,9 +19,11 @@
     "style": "short",
     "ingredients": ["ジン", "ドライベルモット", "オリーブ"],
     "ingredientsEn": ["Gin", "Dry Vermouth", "Olive"],
+    "amounts": ["45ml", "15ml", "1個"],
     "image": "images/cocktails/martini.jpg",
     "description": "カクテルの王様と呼ばれる、シンプルかつ奥深い一杯。",
-    "descriptionEn": "Known as the king of cocktails — a simple yet profoundly elegant drink."
+    "descriptionEn": "Known as the king of cocktails — a simple yet profoundly elegant drink.",
+    "bartenderNote": "ミキシンググラスに氷を入れ、しっかりステアして十分に冷やす。ベルモットの量で辛口〜甘口を調整。グラスは事前に冷凍庫で冷やしておくこと。"
   },
   {
     "id": "old-fashioned",
@@ -28,9 +32,11 @@
     "style": "rock",
     "ingredients": ["バーボン", "アンゴスチュラビターズ", "砂糖", "オレンジピール"],
     "ingredientsEn": ["Bourbon", "Angostura Bitters", "Sugar", "Orange Peel"],
+    "amounts": ["45ml", "2dash", "1個", "1片"],
     "image": "images/cocktails/old-fashioned.jpg",
     "description": "ウイスキーの芳醇な味わいをビターズと砂糖が引き立てるクラシックカクテル。",
-    "descriptionEn": "A classic cocktail where bitters and sugar enhance the rich flavor of whiskey."
+    "descriptionEn": "A classic cocktail where bitters and sugar enhance the rich flavor of whiskey.",
+    "bartenderNote": "角砂糖にビターズを染み込ませ、少量の水でマドルして溶かす。大きめの氷を1つ入れ、バーボンを注いでゆっくりステア。オレンジピールは皮のオイルを表面に振りかけてから添える。"
   },
   {
     "id": "moscow-mule",
@@ -39,9 +45,11 @@
     "style": "long",
     "ingredients": ["ウォッカ", "ジンジャービア", "ライムジュース"],
     "ingredientsEn": ["Vodka", "Ginger Beer", "Lime Juice"],
+    "amounts": ["45ml", "適量", "15ml"],
     "image": "images/cocktails/moscow-mule.jpg",
     "description": "ジンジャーの刺激とライムの酸味が爽快なカクテル。",
-    "descriptionEn": "A refreshing cocktail with the kick of ginger and the tartness of lime."
+    "descriptionEn": "A refreshing cocktail with the kick of ginger and the tartness of lime.",
+    "bartenderNote": "銅製マグカップで提供するのが伝統的。氷をたっぷり入れ、ウォッカとライムジュースを先に注ぎ、ジンジャービアで満たす。ライムウェッジを添える。"
   },
   {
     "id": "negroni",
@@ -50,9 +58,11 @@
     "style": "rock",
     "ingredients": ["ジン", "カンパリ", "スイートベルモット"],
     "ingredientsEn": ["Gin", "Campari", "Sweet Vermouth"],
+    "amounts": ["30ml", "30ml", "30ml"],
     "image": "images/cocktails/negroni.jpg",
     "description": "ほろ苦さと甘みが絶妙にマッチした、イタリア生まれの名作。",
-    "descriptionEn": "An Italian masterpiece with a perfect balance of bitterness and sweetness."
+    "descriptionEn": "An Italian masterpiece with a perfect balance of bitterness and sweetness.",
+    "bartenderNote": "すべて同量（1:1:1）が基本。ロックグラスに大きめの氷を入れ、材料を注いで軽くステア。オレンジスライスまたはオレンジピールをガーニッシュに。"
   },
   {
     "id": "daiquiri",
@@ -61,8 +71,10 @@
     "style": "short",
     "ingredients": ["ホワイトラム", "ライムジュース", "砂糖"],
     "ingredientsEn": ["White Rum", "Lime Juice", "Sugar"],
+    "amounts": ["45ml", "15ml", "1tsp"],
     "image": "images/cocktails/daiquiri.jpg",
     "description": "ラムの甘みとライムの酸味が織りなすキューバ生まれのショートカクテル。",
-    "descriptionEn": "A Cuban-born short cocktail weaving together the sweetness of rum and the tartness of lime."
+    "descriptionEn": "A Cuban-born short cocktail weaving together the sweetness of rum and the tartness of lime.",
+    "bartenderNote": "シェーカーに材料と氷を入れ、しっかりシェイク。砂糖はシロップに置き換えてもよい（その場合10ml程度）。キレのある冷たさが命なので手早く仕上げる。"
   }
 ]
